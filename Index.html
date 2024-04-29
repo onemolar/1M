@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <!--HEADER-->
+        <div id="header">
+            <table width="100%" style="padding-left: 20px">
+                <tr align="left"><td><button id="icon"></button></td>
+                <td><img src="./text.png" id="logo" align="left"></td>
+                <td width="75%">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Characters</a>
+                    <a href="#">Products</a>
+                </td>
+                <td><a href="#calculator"><img src="Calculator_onemolar.png" height="30px"></a></td>
+                </tr>
+            </table>
+        </div>
+    </head>
+    <body>
+
+    <!--PHOTOBANNER-->
+    <div class="photobanner first" opacity="0.85">
+        <img id="bannerimg" src="./Sqaure_black_rainbow.png">
+        <img id="bannerimg" src="./Square_full_molar.png">
+        <img id="bannerimg" src="./Square_triangle_molar.png">
+        <img id="bannerimg" src="./Square_happymolar.png">
+        <img id="bannerimg" src="./Square_nine_molar.png">
+
+
+        <img id="bannerimg" src="./Sqaure_black_rainbow.png">
+        <img id="bannerimg" src="./Square_full_molar.png">
+        <img id="bannerimg" src="./Square_triangle_molar.png">
+        <img id="bannerimg" src="./Square_happymolar.png">
+        <img id="bannerimg" src="./Square_nine_molar.png">
+    </div>
+    <!--CALCULAOR-->
+    <div class="cal" id="calculator">
+        <h1 align="center"><img src="./onemolar.png" height="100px" style="margin-bottom: -30px">CALCULATOR</h1>
+        <h3>The substance of which you are trying to find the molarity: </h3>
+        <input type="text" id="substanceM" size="35">
+        <table><tr><td width="80%" style="text-align: left">
+            <input type="number" id="mol" placeholder="Numbers of moles of substance" required><br>
+            <input type="number" id="dm3" placeholder="Volume of liquid (dm³)" required><br>
+            <button id="calculate" class="button1" onclick="subM = document.getElementById('substanceM').value; mol = document.getElementById('mol').value; dm3 = document.getElementById('dm3').value; M = mol / dm3; document.getElementById('answer').innerHTML = 'Molarity: ' + M ; document.getElementById('ansM').innerHTML = '∴ The molarity of the solution of ' + subM + ' is ' + M + 'M.'"
+            >Calculate</button>
+            <button><button></button>
+            </td>
+            <td><img height="230px" src="./Square_triangle_molar.png"></td>
+            </tr></table>
+        <h2 id="answer">Molarity: </h2>
+        <h3 id="ansM">∴</h3>
+        <a href="#calculator2"><h3 align="right">Switch to Mole<h3></a>
+    </div>
+
+    <div class="cal" id="calculator2">
+        <h1 align="center"><img src="onemole_icon.png" height="55px" style="margin-bottom: -13px">CALCULATOR</h1>
+        <h3>The substance of which you are trying to find the number of moles: </h3>
+        <input type="text" id="substancem" size="35">
+        <table><tr><td width="70%" style="text-align: left">
+            <input type="number" id="g" placeholder="Mass of substance (g) " required><br>
+            <input type="number" id="gmol" placeholder="Molecular mass (g mol⁻¹)" required><br>
+            <button id="calculate" class="button1" onclick="subm = document.getElementById('substancem').value; g = document.getElementById('g').value; gmol = document.getElementById('gmol').value; document.getElementById('answer2').innerHTML = 'Moles: ' + g / gmol; document.getElementById('ansm').innerHTML = '∴ The number of moles of ' + subm + ' is ' + g / gmol + '.'"
+            >Calculate</button></td>
+            <td><img height="230px" src="./Square_triangle_mole.png"></td>
+            </tr></table>
+        <h2 id="answer2">Moles: </h2>
+        <h3 id="ansm">∴</h3>
+        <a href="#calculator"><h3 align="right">Switch to Molarity</h3></a>
+    </div>
+    <!--PROMOTION-->
+    <hr>
+    <h1 style="color: white; text-align: center; font-size: 60px">FANART SHOWCASE</h1>
+    <div class="photobanner second">
+        <img src="./Fanart_onemolar.jpeg">
+        <img src="./Fanart_onemole.jpeg">
+
+        <img src="./Fanart_onemolar.jpeg">
+        <img src="./Fanart_onemole.jpeg">
+    </div>
+    <!--FOOTER-->
+    </body>
+
+</html>
