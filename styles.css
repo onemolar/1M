@@ -70,13 +70,19 @@ img {
 }
 #icon {
     height: 50px;
-    background-image: url(onemolar_icon.png);
+    background-image: url(onemolar.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
     width: 50px;
     border: none;
     background-color: rgba(0,0,0,0);
+}
+#icon:active {
+	background-iamge: url(happymolar.png);
+	background-size: contain;
+	background-repeat: no repeat;
+	transfrom: scale(1.15);
 }
 .photobanner {
     width: 3500px;
