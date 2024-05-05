@@ -89,6 +89,9 @@ img {
     margin: 190px 0px;
     background-color: black;
 }
+.photobanner img {
+	height: 300px;
+}
 .first {
 	animation: bannermove 14s linear infinite;
 }
